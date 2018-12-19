@@ -83,8 +83,6 @@ app.get('/success', (req, res) => {
 
 app.get('/cancel', (req, res) => res.send('Cancelled'));
 
-app.listen(3000, () => console.log('Server Started'));
-
 const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, console.log(`server started on port ${PORT}`));
