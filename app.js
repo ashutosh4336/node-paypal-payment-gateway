@@ -81,7 +81,7 @@ app.get('/success', (req, res) => {
     });
 });
 
-app.get('/cancel', (req, res) => res.send('Cancelled'));
+app.get('/cancel', (req, res) => res.send('Something Went Wrong Please Try other Method'));
 
 const PORT = process.env.PORT || 4000;
 
