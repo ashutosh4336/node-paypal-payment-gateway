@@ -4,8 +4,8 @@ const paypal = require('paypal-rest-sdk');
 
 paypal.configure({
     'mode': 'sandbox', //sandbox or live
-    'client_id': 'ATV0A1vPfEJYVdmZ-IT0pOunpPqdmQZFkGYDvSzqB-lREPG5LcVYAFQEiSIjTRyuLATp5RQgobL7S3Hi',
-    'client_secret': 'EE-bcNHp7z8qITyAP7bNBKupbelej44GrAStnDfMpsi8aXnkqTUBFpR4lIdGvRoK7ox4uArtLC77QTmT'
+    'client_id': 'Your Client-ID go to developer.paypal.com',
+    'client_secret': 'sandbox.paypal.com'
 });
 
 const app = express();
@@ -84,11 +84,7 @@ app.get('/success', (req, res) => {
 app.get('/cancel', (req, res) => res.send('Cancelled'));
 
 app.listen(3000, () => console.log('Server Started'));
-//access token -access_token$sandbox$gx9zdgq9szsssw2x$00ac93850f57a4c2ae4498de5d68a1f6
+
 const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, console.log(`server started on port ${PORT}`));
-
-
-//client_id': 'ATV0A1vPfEJYVdmZ-IT0pOunpPqdmQZFkGYDvSzqB-lREPG5LcVYAFQEiSIjTRyuLATp5RQgobL7S3Hi',
-//'client_secret': 'EE-bcNHp7z8qITyAP7bNBKupbelej44GrAStnDfMpsi8aXnkqTUBFpR4lIdGvRoK7ox4uArtLC77QTmT'
